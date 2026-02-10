@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWI MVP — Digital Work Instructions Project Proposal</title>
+    <meta name="description" content="Interactive project proposal for the Digital Work Instructions (DWI) MVP — transforming static drilling plans into dynamic, real-time verifiable digital workflows.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">DWI<span class="logo-accent">MVP</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#modules" class="nav-link">Modules</a></li>
+                <li><a href="#timelines" class="nav-link">Timelines</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Project Proposal — Scope of Work
+            </div>
+            <h1 class="hero-title animate-in">
+                Digital Work<br>
+                <span class="gradient-text">Instructions</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Transforming static drilling plans into dynamic, real-time verifiable digital workflows — an integrated platform to digitize the lifecycle of work instructions.
+            </p>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Core Modules</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Logic Layers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Data Sources</span>
+                </div>
+            </div>
+            <div class="hero-actions animate-in">
+                <a href="#modules" class="btn btn-primary">
+                    Explore Modules
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="#timelines" class="btn btn-outline">View Timelines</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section overview" id="overview">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">01 — Project Objective</span>
+                <h2 class="section-title">Building the Future of <span class="gradient-text">Drilling Operations</span></h2>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-main animate-in">
+                    <p class="overview-text">
+                        The developer will build an <strong>integrated platform</strong> to digitize the lifecycle of work instructions, covering <em>Creation, Review, Execution, and Reporting</em>. The system must utilize AI to ingest historical data and a Real-Time (RT) Engine to validate live rig operations against planned instructions.
+                    </p>
+                    <div class="overview-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🤖</div>
+                            <h4>AI-Powered</h4>
+                            <p>OCR & NLP for historical document processing with BERT/LLM models</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">⚡</div>
+                            <h4>Real-Time</h4>
+                            <p>Live execution validation via WITS, WITSML & OPC protocols</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🔄</div>
+                            <h4>Closed-Loop</h4>
+                            <p>Post-job analytics feed back into template refinement</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🛡️</div>
+                            <h4>Governance</h4>
+                            <p>Frozen execution packages with versioned, pre-approved templates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-sidebar animate-in">
+                    <div class="data-layer-card">
+                        <h4>Technical Data Layer</h4>
+                        <div class="data-chips">
+                            <span class="chip">Depth</span>
+                            <span class="chip">RPM</span>
+                            <span class="chip">Torque</span>
+                            <span class="chip">WOB</span>
+                            <span class="chip">Flow</span>
+                            <span class="chip">Pressure</span>
+                            <span class="chip">Well Plans</span>
+                            <span class="chip">Rig Specs</span>
+                            <span class="chip">Well Geometry</span>
+                        </div>
+                        <div class="logic-layers">
+                            <h5>Logic Layers</h5>
+                            <div class="layer"><span class="layer-tag">A</span> Step Definition</div>
+                            <div class="layer"><span class="layer-tag">B</span> Entry Conditions</div>
+                            <div class="layer"><span class="layer-tag">C</span> Execution Validation</div>
+                            <div class="layer"><span class="layer-tag">D</span> Exit Logic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Cards -->
+    <section class="section modules" id="modules">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">02 — System Architecture</span>
+                <h2 class="section-title">Four Integrated <span class="gradient-text">Modules</span></h2>
+                <p class="section-desc">Each module serves a distinct purpose in the DWI ecosystem, forming a closed-loop system from data ingestion to continuous improvement.</p>
+            </div>
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card module-1 animate-in" data-module="1">
+                    <div class="module-number">M1</div>
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.1-.9 2-2 2h-4a2 2 0 0 1-2-2 4 4 0 0 1 4-4z"/><path d="M8 8v8a4 4 0 0 0 8 0V8"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>
+                        </div>
+                        <h3>AI Processing Layer</h3>
+                        <span class="module-badge">Offline</span>
+                    </div>
+                    <p class="module-desc">"Structural Learning" from historical documents to build a centralized WI Repository using OCR, NLP, and LLM models.</p>
+                    <ul class="module-features">
+                        <li>Document Ingestion AI (OCR & NLP)</li>
+                        <li>Semantic Alignment — GP ↔ DDR mapping</li>
+                        <li>Outcome Classification</li>
+                        <li>Human-in-the-Loop Validation</li>
+                    </ul>
+                    <div class="module-flow-preview">
+                        <span>GP/DDR Input</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Extraction</span>
+                        <span class="flow-arrow">→</span>
+                        <span>LLM</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Mapping</span>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card module-2 animate-in" data-module="2">
+                    <div class="module-number">M2</div>
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M3 9h6"/><path d="M3 15h6"/></svg>
+                        </div>
+                        <h3>DWI Creation & Pre-Job Governance</h3>
+                        <span class="module-badge">Interactive</span>
+                    </div>
+                    <p class="module-desc">Template-based instruction builder with a 5-step logic definition system and frozen execution packages.</p>
+                    <ul class="module-features">
+                        <li>Instruction Builder AI (Templates)</li>
+                        <li>5-Step Logic Builder</li>
+                        <li>Validation & Consistency Check</li>
+                        <li>Frozen Execution Package</li>
+                    </ul>
+                    <div class="module-flow-preview">
+                        <span>Template</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Logic</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Validate</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Freeze</span>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card module-3 animate-in" data-module="3">
+                    <div class="module-number">M3</div>
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 15.5"/></svg>
+                        </div>
+                        <h3>Online Real-Time (RT) Engine</h3>
+                        <span class="module-badge badge-live">Live</span>
+                    </div>
+                    <p class="module-desc">Live execution & instant validation against frozen plans, supporting WITS/WITSML/OPC protocols with edge buffering.</p>
+                    <ul class="module-features">
+                        <li>Data Ingestion (WITS/WITSML/OPC)</li>
+                        <li>State & Phase Detection</li>
+                        <li>Planned vs. Actual Validation</li>
+                        <li>Driller Interface (Tablet)</li>
+                    </ul>
+                    <div class="module-flow-preview">
+                        <span>Live Data</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Detect</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Validate</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Alert</span>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card module-4 animate-in" data-module="4">
+                    <div class="module-number">M4</div>
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><polyline points="7 16 11 12 15 14 19 8"/></svg>
+                        </div>
+                        <h3>Reporting & Post-Job Analytics</h3>
+                        <span class="module-badge">Analytics</span>
+                    </div>
+                    <p class="module-desc">Automated daily operation reports, deviation analysis, and a feedback loop to continuously improve WI templates.</p>
+                    <ul class="module-features">
+                        <li>Automatic Daily Reporting</li>
+                        <li>Deviation & Funnel Analytics</li>
+                        <li>Post-Job Review Cycle</li>
+                        <li>Feedback Loop → Module 1</li>
+                    </ul>
+                    <div class="module-flow-preview">
+                        <span>Data</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Analyze</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Report</span>
+                        <span class="flow-arrow">→</span>
+                        <span>Refine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Connection Flow -->
+    <section class="section flow-section">
+        <div class="container">
+            <div class="flow-strip animate-in">
+                <div class="flow-node flow-m1"><span>M1</span> AI Processing</div>
+                <div class="flow-connector">
+                    <svg width="60" height="24" viewBox="0 0 60 24"><path d="M0 12h54m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <div class="flow-node flow-m2"><span>M2</span> DWI Creation</div>
+                <div class="flow-connector">
+                    <svg width="60" height="24" viewBox="0 0 60 24"><path d="M0 12h54m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <div class="flow-node flow-m3"><span>M3</span> RT Engine</div>
+                <div class="flow-connector">
+                    <svg width="60" height="24" viewBox="0 0 60 24"><path d="M0 12h54m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <div class="flow-node flow-m4"><span>M4</span> Analytics</div>
+                <div class="flow-connector flow-feedback">
+                    <svg width="60" height="24" viewBox="0 0 60 24"><path d="M54 12H6m6-6L6 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/></svg>
+                    <span class="feedback-label">Feedback Loop</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Timelines -->
+    <section class="section timelines" id="timelines">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">03 — Detailed Breakdown</span>
+                <h2 class="section-title">Step-by-Step <span class="gradient-text">Timelines</span></h2>
+                <p class="section-desc">Every task inside each module, as designed by the development team.</p>
+            </div>
+
+            <!-- Timeline Module Tabs -->
+            <div class="timeline-tabs animate-in">
+                <button class="tab-btn active" data-tab="timeline-1">
+                    <span class="tab-dot module-dot-1"></span> Module 1
+                </button>
+                <button class="tab-btn" data-tab="timeline-2">
+                    <span class="tab-dot module-dot-2"></span> Module 2
+                </button>
+                <button class="tab-btn" data-tab="timeline-3">
+                    <span class="tab-dot module-dot-3"></span> Module 3
+                </button>
+                <button class="tab-btn" data-tab="timeline-4">
+                    <span class="tab-dot module-dot-4"></span> Module 4
+                </button>
+            </div>
+
+            <!-- Timeline 1 – Module 1 -->
+            <div class="timeline-panel active" id="timeline-1">
+                <div class="timeline-heading">
+                    <h3>Module 1 — AI Processing Layer <span class="tag-offline">Offline</span></h3>
+                    <p>Structural learning pipeline: from raw document ingestion to a structured, searchable WI Repository.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-step="1">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 1</span>
+                            <h4>Text Input Collection (GP / DDR)</h4>
+                            <p>Collect historical Game Plans and Daily Drilling Reports in PDF, Word, and Excel formats as the raw input to the pipeline.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="2">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 2</span>
+                            <h4>Text & Table Extraction</h4>
+                            <p>Parse documents to extract textual content and tabular data separately, handling scanned documents via OCR when needed.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="3">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 3</span>
+                            <h4>Text Summarization & Sentence Embeddings</h4>
+                            <p>Generate summaries and convert text into vector embeddings for semantic search and similarity matching.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="4">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 4</span>
+                            <h4>BERT / Fine-tuned LLM Processing</h4>
+                            <p>Apply domain-specific BERT or fine-tuned LLM models to understand drilling terminology and classify content. Uses OCR branch for scanned/handwritten documents.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Branch</span> OCR if scanned / handwritten
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="5">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 5</span>
+                            <h4>Contextual History & Document Reduction</h4>
+                            <p>Build contextual history from the processed documents and reduce redundancy to create a clean, deduplicated corpus.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="6">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 6</span>
+                            <h4>Records Value Extraction</h4>
+                            <p>Extract structured field values from records using field matching and pattern recognition to populate the data model.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Input</span> Field Match techniques
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="7">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 7</span>
+                            <h4>Records Validation</h4>
+                            <p>Validate extracted records using LLM-based event reporting. Documents passing as GP or DDR continue; others loop for vector DB retrieval.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Decision</span> Reported Events (LLM-Based) — if not GP/DDR → Vector DBs for Retrieval
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="8">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 8</span>
+                            <h4>Location Similarity (Semantic)</h4>
+                            <p>Match locations across documents using semantic similarity to group related operations regardless of naming conventions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="9">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 9</span>
+                            <h4>GP & DDR Mapping</h4>
+                            <p>Align planned GP steps with actual DDR execution text to enable direct comparison and deviation analysis.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="10">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 10</span>
+                            <h4>Outcome Supply</h4>
+                            <p>Classify each mapped step's outcome as one of the four categories.</p>
+                            <div class="outcome-tags">
+                                <span class="outcome completed">Completed</span>
+                                <span class="outcome deviation">Deviation</span>
+                                <span class="outcome aborted">Aborted</span>
+                                <span class="outcome diverted">Diverted</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="11">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 11</span>
+                            <h4>Register Master Portal</h4>
+                            <p>Final output to the Master Portal — a human-in-the-loop validation interface for engineers to accept or reject AI-generated alignments.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Via</span> Field Match vs. DS Based comparison
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline 2 – Module 2 -->
+            <div class="timeline-panel" id="timeline-2">
+                <div class="timeline-heading">
+                    <h3>Module 2 — DWI Creation & Pre-Job Governance <span class="tag-interactive">Interactive</span></h3>
+                    <p>Template-based workflow creation with 5-step logic definition and governance controls.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-step="1">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 1</span>
+                            <h4>Template Selection</h4>
+                            <p>Users select from pre-approved Execution Templates where the core logic structure is fixed, ensuring consistency and compliance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="2">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 2</span>
+                            <h4>Pre-Assembly & Variable Entry</h4>
+                            <p>Populate the template with job-specific variable parameters — depth targets, thresholds, severity levels, and equipment specifications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="3">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 3</span>
+                            <h4>Define Pre-Conditions & Steps</h4>
+                            <p>Set entry conditions and define the execution steps. Optionally approve with comment for auto-flagging.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Gate</span> Approve with comment (auto, or flagging)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="4">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 4</span>
+                            <h4>5-Step Logic Definition</h4>
+                            <p>Implement the core logic builder covering all five dimensions of instruction logic.</p>
+                            <div class="logic-steps">
+                                <div class="logic-step"><span>1</span> Operation Identification (Drill, RIH, POOH, etc.)</div>
+                                <div class="logic-step"><span>2</span> Step Behavior (Action, Monitor, Verify, Safety, Hold)</div>
+                                <div class="logic-step"><span>3</span> Constraints & Acceptance Criteria</div>
+                                <div class="logic-step"><span>4</span> Real-Time Evidence Linkage (Torque/RPM signals)</div>
+                                <div class="logic-step"><span>5</span> Dynamic Logic (Condition keys & event scopes)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="5">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 5</span>
+                            <h4>Validation & Consistency Check</h4>
+                            <p>Automated validation of the complete instruction set for logical consistency, missing references, and conflicting rules. Flagging for manual review when needed.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="6">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 6</span>
+                            <h4>Process Template Version</h4>
+                            <p>Version the validated template. Once signed, the DWI becomes a "Frozen Execution Package" — locked and immutable for deployment.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Output</span> Frozen Execution Package → deployed to RT Engine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline 3 – Module 3 -->
+            <div class="timeline-panel" id="timeline-3">
+                <div class="timeline-heading">
+                    <h3>Module 3 — Online Real-Time (RT) Engine <span class="tag-live">Live</span></h3>
+                    <p>Live data interpretation and instant validation against the frozen plan.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-step="1">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 1</span>
+                            <h4>Connect to Live Data Points</h4>
+                            <p>Establish connections to rig sensor data streams via WITS, WITSML, and OPC protocols. Includes MQTT and KAFKA message brokers for reliable transport.</p>
+                            <div class="protocol-tags">
+                                <span class="proto">WITS</span>
+                                <span class="proto">WITSML</span>
+                                <span class="proto">OPC</span>
+                                <span class="proto">MQTT</span>
+                                <span class="proto">KAFKA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="2">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 2</span>
+                            <h4>Step Recognition / State Tracking</h4>
+                            <p>Automatically detect the current operation, phase, and sub-phase using signal patterns and historical context.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="3">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 3</span>
+                            <h4>Plan vs. Actual Deviation</h4>
+                            <p>Real-time monitoring of sequence, time, and parameters against the frozen execution plan. Alerts on deviations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="4">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 4</span>
+                            <h4>Real-Time Execution Validation</h4>
+                            <p>Timestamp matching with surface data to validate every step as it happens. Uses KDE + Variance algorithms for statistical validation.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Engine</span> KDE + Variance LI + Algo Checking
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="5">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 5</span>
+                            <h4>KPI Board & Driller Interface</h4>
+                            <p>Push active instructions and KPI metrics to the driller's tablet on the rig floor. Plot high-risk events directly in the RT log.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="6">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 6</span>
+                            <h4>Archive to Database</h4>
+                            <p>Persist all execution data, validations, and events to the archive for post-job analytics and historical reference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline 4 – Module 4 -->
+            <div class="timeline-panel" id="timeline-4">
+                <div class="timeline-heading">
+                    <h3>Module 4 — Reporting & Post-Job Analytics <span class="tag-analytics">Analytics</span></h3>
+                    <p>Automated reporting, deviation analysis, and feedback loop for continuous improvement.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-step="1">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 1</span>
+                            <h4>Collect Raw / Clean Data</h4>
+                            <p>Aggregate all execution data from the RT Engine — sensor readings, validation results, deviation logs, and event timestamps.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="2">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 2</span>
+                            <h4>Deviation & Funnel Analytics</h4>
+                            <p>Perform statistical analysis on deviations. Create funnel views showing how planned operations compare to actual execution at each stage.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="3">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 3</span>
+                            <h4>Auto-Report Generation</h4>
+                            <p>Generate Daily Operation Reports instantly based on RT engine data. Includes operational KPIs, fatigue analysis, and template compliance metrics.</p>
+                            <div class="report-types">
+                                <span class="report-tag">Operational KPIs</span>
+                                <span class="report-tag">Fatigue Analysis</span>
+                                <span class="report-tag">Template Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="4">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 4</span>
+                            <h4>Mapping Module Integration</h4>
+                            <p>Cross-reference analytics with the Module 1 mapping layer to enrich historical context and improve future template accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="5">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 5</span>
+                            <h4>Feedback Loop Output</h4>
+                            <p>Implement the continuous improvement mechanism — refine WI templates and update risk tagging based on post-job findings.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-step="6">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="step-number">Step 6</span>
+                            <h4>Archive & Deliver to Module 1</h4>
+                            <p>Close the loop: archive all analytics results and feed enriched data back to Module 1's AI processing layer for continuous learning.</p>
+                            <div class="step-branch">
+                                <span class="branch-tag">Loop</span> Feeds back into Module 1 for re-training & improvement
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section architecture" id="architecture">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">04 — Technical Foundation</span>
+                <h2 class="section-title">Architecture & <span class="gradient-text">Data Layer</span></h2>
+            </div>
+            <div class="arch-grid">
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">📡</div>
+                    <h4>Data Sources</h4>
+                    <p>Surface data integration including Depth, RPM, Torque, WOB, Flow, Pressure, Well Plans, Rig Specs, and Well Geometry.</p>
+                </div>
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">🧱</div>
+                    <h4>Logic Layer A — Step Definition</h4>
+                    <p>Define individual operation steps with their parameters, expected values, and acceptance criteria.</p>
+                </div>
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">🚪</div>
+                    <h4>Logic Layer B — Entry Conditions</h4>
+                    <p>Gate each step with preconditions that must be met before execution can begin.</p>
+                </div>
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">✅</div>
+                    <h4>Logic Layer C — Execution Validation</h4>
+                    <p>Real-time validation engine that checks live data against planned parameters and thresholds.</p>
+                </div>
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">🚀</div>
+                    <h4>Logic Layer D — Exit Logic</h4>
+                    <p>Determine step completion criteria and trigger transitions to the next operation phase.</p>
+                </div>
+                <div class="arch-card animate-in">
+                    <div class="arch-icon">🔗</div>
+                    <h4>Protocol Support</h4>
+                    <p>WITS, WITSML, OPC for sensor data; MQTT & KAFKA for message brokering; Edge buffering for connectivity resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">DWI<span class="logo-accent">MVP</span></span>
+                </div>
+                <p class="footer-text">Digital Work Instructions — Project Proposal</p>
+                <p class="footer-copy">Scope of Work · Confidential</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
